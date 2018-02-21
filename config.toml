@@ -1,0 +1,11 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "pb"
+staticDir = ["static"]
+
+[params]
+  theme_color = "#4285f4"
+  description = "description of the best page"
+  slogan = "Handle your IT Infrastructure with as much care as your patients"
+  lead_paragraph = "We are healthcare IT consultants who know the industry and can help integrate essential security and cost saving solutions into your company"
