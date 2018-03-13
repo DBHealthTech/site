@@ -1,1 +1,23 @@
-<!doctype html> <html> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title> <link rel="stylesheet" href="/dist/295d99f6ceb5b04e22617211bc98417c.css">  <meta name="theme-color" content="#4285f4">   <meta name="description" content="A description of the page"> </head> <body> <header> <h1>Logo Here</h1> <div class="contact"> <div> <a href="tel:+6161111111">📞 616-111-1111</a> </div> </div> </header> <div class="hero"> <div> <h1>Handle your IT Infrastructure with as much care as your patients</h1> <p>Security, compliance, cost reductions. <br>We're here to help. </p> </div> </div> <main> <p class="lead">We are healthcare IT consultants who know the industry and can help integrate essential security and cost saving solutions into your company</p> <h2 class="center">Serivces</h2> <div class="serviceGrid"> <div class="graphic"> <span class="icon">💻</span> </div> <div class="content"> <h3>Cloud computing</h3> <p>We are the best and the best and the best and the best and the best and the best and the best and the best and the best and the best and the best and the best. </p> </div> <div class="graphic"> <span class="icon">💻</span> </div> <div class="content"> <h3>Cloud computing</h3> <p>We are the best and the best and the best and the best and the best and the best and the best and the best and the best and the best and the best and the best. </p> </div> </div> <h2 class="center">Testimonials</h2> <div class="opp-serviceGrid"> <div class="content"> <h3>So and so</h3> <p><span class="pull">“</span>Mr. Abc and the 123's lived in the north and then moved to the west and then settled down in the east only to end up back in the north in a nice big building</p> <i>Joe smoe - CTO of xyz</i> </div> <div class="graphic"> <div class="image-cropper"> <img src="http://via.placeholder.com/138x138"> </div> </div> <div class="content"> <h3>So and so</h3> <p><span class="pull">“</span>Mr. Abc and the 123's lived in the north and then moved to the west and then settled down in the east only to end up back in the north in a nice big building</p> <i>Joe smoe - CTO of xyz</i> </div> <div class="graphic"> <div class="image-cropper"> <img src="http://via.placeholder.com/138x138"> </div> </div> </div> <h2 class="center">Team</h2> <div class="serviceGrid"> <div class="graphic"> <div class="image-cropper"> <img src="http://via.placeholder.com/138x138"> </div> </div> <div class="content"> <h3>Melissa Jones<h3> <p>Mr. Abc and the 123's lived in the north and then moved to the west and then settled down in the east only to end up back in the north in a nice big building</p> </h3></h3></div> <div class="graphic"> <div class="image-cropper"> <img src="http://via.placeholder.com/138x138"> </div> </div> <div class="content"> <h3>Bobby Jones</h3> <p>Mr. Abc and the 123's lived in the north and then moved to the west and then settled down in the east only to end up back in the north in a nice big building</p> </div> </div> <h2 class="center">Contact</h2> </main> <footer> <p>Footer</p> </footer> </body> </html> 
+{{ partial "header.html" . }}
+<article class="post post-view">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-meta">
+      {{- if or .Params.author .Site.Params.author -}}
+      {{ .Params.author | default .Site.Params.author }} · {{ end }}
+      {{- .Date.Format "2006.1.2" -}}
+    </p>
+  </header>
+  <div class="post-content">{{ .Content }}</div>
+  <footer class="post-footer">
+    {{ if .Params.tags }}
+    <ul class="post-tags">
+      {{ range .Params.tags }}
+      <li><a href="{{ `/tags/` }}{{ . | urlize }}/">{{ . }}</a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </footer>
+  <!-- Comments system area -->
+</article>
+{{ partial "footer.html" . }}
