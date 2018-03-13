@@ -185,8 +185,37 @@ span.pull {
     border-radius: 50%;
 }
 
-h2 {
+h2.center {
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1024px) {
+    h2.center:before, h2.center:after {
+        content: "";
+        border-bottom-width: 1px;
+        border-bottom-color: rgb(204, 204, 204);
+        border-bottom-style: solid;
+
+        border-top-width: 1px;
+        border-top-color: rgb(204, 204, 204);
+        border-top-style: solid;
+
+        display: inline-block;
+        box-sizing: border-box;
+        height: 4px;
+        letter-spacing: 1px;
+        line-height: 39.6px;
+        color: rgb(51, 51, 51);
+        width: 300px;
+    }
+
+    h2.center:before {
+        margin-right: 15px;
+    }
+
+    h2.center:after {
+        margin-left: 15px;
+    }
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
