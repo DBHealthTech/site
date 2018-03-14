@@ -31,7 +31,15 @@
     </div>
     <main>
       <p class="lead">{{ .Site.Params.lead_paragraph }}</p>
-      <h2 class="center">Services</h2>
+<div class="center pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#services" class="pure-menu-link">Services</a></li>
+        <li class="pure-menu-item"><a href="#testimonials" class="pure-menu-link">Testimonials</a></li>
+        <li class="pure-menu-item"><a href="#team" class="pure-menu-link">Team</a></li>
+        <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
+    </ul>
+</div>
+      <h2 id="services" class="center">Services</h2>
       <div class="serviceGrid">
         {{ range sort .Site.Data.services "weight" }}
         <div class="graphic">
@@ -44,7 +52,7 @@
         {{ end }}
       </div>
 
-      <h2 class="center">Testimonials</h2>
+      <h2 id="testimonials" class="center">Testimonials</h2>
 			<div class="opp-serviceGrid">
         {{ range sort .Site.Data.testimonials "weight" }}
           <div class="content">
@@ -60,7 +68,7 @@
         {{ end }}
 			</div>
 
-      <h2 class="center">Team</h2>
+      <h2 id="team" class="center">Team</h2>
 			<div class="serviceGrid">
         {{ range sort .Site.Data.team "weight" }}
           <div class="graphic">
@@ -74,7 +82,7 @@
           </div>
         {{ end }}
 			</div>
-      <h2 class="center">Contact</h2>
+      <h2 id="contact" class="center">Contact</h2>
     </main>
     <footer>
       <p>Footer</p>

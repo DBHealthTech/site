@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "purecss/build/menus.css";
 
 :root {
     --bar-color: #003459;
