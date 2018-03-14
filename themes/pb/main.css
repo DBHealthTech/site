@@ -206,7 +206,8 @@ h2.center {
         letter-spacing: 1px;
         line-height: 39.6px;
         color: rgb(51, 51, 51);
-        width: 300px;
+        width: 30%;
+        margin-bottom: 6px;
     }
 
     h2.center:before {
