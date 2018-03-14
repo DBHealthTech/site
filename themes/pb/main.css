@@ -111,6 +111,40 @@ div.hero p {
 
 footer {
   background-color: var(--bar-color);
+  color: white;
+  padding-top: 1em;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: normal;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+}
+
+div.footer-info > div {
+    width: 200px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer > div {
+    justify-content: baseline;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  div.footer-info {
+    display: flex;
+  }
+
+  div.footer-info > div {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 .center {
@@ -184,39 +218,34 @@ span.pull {
   border-radius: 50%;
 }
 
-h2.center {
+h2.center,
+div.footer-info h3 {
   text-transform: uppercase;
 }
 
 @media only screen and (min-width: 1024px) {
-  h2.center:before,
-  h2.center:after {
-    content: "";
-    border-bottom-width: 1px;
-    border-bottom-color: rgb(204, 204, 204);
-    border-bottom-style: solid;
-
-    border-top-width: 1px;
-    border-top-color: rgb(204, 204, 204);
-    border-top-style: solid;
-
-    display: inline-block;
-    box-sizing: border-box;
-    height: 4px;
-    letter-spacing: 1px;
-    line-height: 39.6px;
-    color: rgb(51, 51, 51);
-    width: 30%;
-    margin-bottom: 6px;
-  }
-
-  h2.center:before {
-    margin-right: 15px;
-  }
-
-  h2.center:after {
-    margin-left: 15px;
-  }
+h2.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+h2.center:before,
+h2.center:after {
+  content: '';
+  flex-grow: 1;
+  height: 3px;
+  position: relative;
+  top: 0.5em;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  border-top: 1px solid rgb(204, 204, 204);
+}
+h2.center:before {
+  margin-right: 20px;
+}
+h2.center:after {
+  margin-left: 20px;
+}
 }
 
 .hide-small {
