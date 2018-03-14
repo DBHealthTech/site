@@ -92,10 +92,11 @@ div.hero {
   background: linear-gradient(to right, var(--accent), var(--light));
 }
 
-div.hero div {
+div.hero > div {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  height: 100%;
 }
 
 div.hero h1 {
