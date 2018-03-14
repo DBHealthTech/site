@@ -1,28 +1,4 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
-    <link rel="stylesheet" href="main.css">
-
-    <!-- Theme Color for Chrome, Firefox OS and Opera -->
-    <!--<meta name="theme-color" content="#4285f4">-->
-    <meta name="theme-color" content="{{ .Site.Params.theme_color }}">
-
-    <!-- Short description of the document (limit to 150 characters) -->
-    <!-- This content *may* be used as a part of search engine results. -->
-    <meta name="description" content="{{ .Site.Params.description }}">
-  </head>
-  <body>
-    <header>
-      <h1>Logo Here</h1>
-      <div class="contact">
-        <div>
-          <a href="tel:+6161111111">📞 616-111-1111</a>
-        </div>
-      </div>
-    </header>
+{{ partial "header.html" . }}
     <div class="full hero">
 			<div>
 				<h1>{{ .Site.Params.slogan }}</h1>
@@ -84,26 +60,4 @@
 			</div>
       <h2 id="contact" class="center">Contact</h2>
     </main>
-    <footer class="full">
-      <div>
-        <div class="footer-info">
-          <div>
-            <h3>Contact</h3>
-            <p>616-111-1111</p>
-            <p>Reach out to one of our team members on Linkedin</p>
-          </div>
-          <div>
-            <h3>Address</h3>
-            <span>234 Hidden Pond Road</span></br>
-            <span>Ashland City, TN 37015</span>
-          </div>
-          <div>
-            <h3>Legal</h3>
-            <p>We are HIPAA trained but that doesn't mean x, y, z. Call us if this is a concern and we can come to agreeable terms</p>
-          </div>
-        </div>
-      </div>
-      <small style="margin-top: 2em">Copyright © 2018</small>
-    </footer>
-  </body>
-</html>
+{{ partial "footer.html" . }}
