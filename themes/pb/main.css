@@ -15,6 +15,10 @@
   }
 }
 
+html, body {
+  min-height: 100%;
+}
+
 body {
   color: var(--font-color);
   font-family: Arial;
@@ -59,13 +63,19 @@ p {
 
 header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+  }
 }
 
 div.contact {
   flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
 }
 
 @media only screen and (min-width: 600px) {
@@ -114,6 +124,7 @@ footer {
   background-color: var(--bar-color);
   color: white;
   padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 footer p {
@@ -257,6 +268,33 @@ h2.center:after {
   .hide-small {
     display: inherit;
   }
+}
+
+p.post-summary, p.post-meta {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 720px) {
+  p.post-summary, p.post-meta {
+    margin-left: 2.5em;
+  }
+}
+
+.post-title {
+  margin-bottom: 0;
+}
+
+p.post-meta {
+  margin-top: 0;
+}
+
+div.post-separator {
+  margin: 1.5em;
+  border-top: 1px solid #eee;
+}
+
+div.content p {
+  line-height: 30px;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */

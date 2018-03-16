@@ -1,8 +1,8 @@
 #!/bin/bash
 
-yarn run parcel build --out-dir themes/pb/dist --public-url './' themes/pb/index.html
-yarn run parcel build --out-dir themes/pb/dist --public-url './' themes/pb/header.html
-yarn run parcel build --out-dir themes/pb/dist --public-url './' themes/pb/footer.html
+yarn run parcel build --out-dir themes/pb/dist --public-url '/' themes/pb/index.html
+yarn run parcel build --out-dir themes/pb/dist --public-url '/' themes/pb/header.html
+yarn run parcel build --out-dir themes/pb/dist --public-url '/' themes/pb/footer.html
 
 sed -i -e 's|http://{|{|g' themes/pb/dist/index.html
 

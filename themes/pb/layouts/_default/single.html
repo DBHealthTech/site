@@ -1,23 +1,22 @@
 {{ partial "header.html" . }}
-<article class="post post-view">
-  <header class="post-header">
+<article>
+  <div>
     <h1 class="post-title">{{ .Title }}</h1>
-    <p class="post-meta">
+    <span>
       {{- if or .Params.author .Site.Params.author -}}
-      {{ .Params.author | default .Site.Params.author }} · {{ end }}
-      {{- .Date.Format "2006.1.2" -}}
-    </p>
-  </header>
-  <div class="post-content">{{ .Content }}</div>
-  <footer class="post-footer">
+      Published by: {{ .Params.author | default .Site.Params.author }} on {{ end }}
+      {{- .Date.Format "January 2, 2006" -}}
+    </span>
+  </div>
+  <div class="content">{{ .Content }}</div>
+  <div>
     {{ if .Params.tags }}
-    <ul class="post-tags">
+    <ul>
       {{ range .Params.tags }}
       <li><a href="{{ `/tags/` }}{{ . | urlize }}/">{{ . }}</a></li>
       {{ end }}
     </ul>
     {{ end }}
-  </footer>
-  <!-- Comments system area -->
+  </div>
 </article>
 {{ partial "footer.html" . }}
