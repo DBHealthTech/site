@@ -14,7 +14,12 @@
       Published by: {{ .Params.author | default .Site.Params.author }} on {{ end }}
       {{- .Date.Format "January 2, 2006" -}}
     </p>
-  <p class="post-summary">{{ .Summary | plainify | htmlUnescape }}... <a href="{{.RelPermalink}}">[Read more]</a></p>
+  <p class="post-summary">
+    {{ .Summary }}
+    {{ if .Truncated }}
+    <a href="{{.RelPermalink}}">Read more…</a>
+    {{ end }}
+  </p>
   <div class="post-separator"/>
 </article>
 {{ end }}
