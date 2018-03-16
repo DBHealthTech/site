@@ -8,13 +8,13 @@
 {{ else }}
 {{ end }}
 <article>
-	<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+	<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <p class="post-meta">
       {{- if or .Params.author .Site.Params.author -}}
       Published by: {{ .Params.author | default .Site.Params.author }} on {{ end }}
       {{- .Date.Format "January 2, 2006" -}}
     </p>
-  <p class="post-summary">{{ .Summary | plainify | htmlUnescape }}... <a href="{{.Permalink}}">[Read more]</a></p>
+  <p class="post-summary">{{ .Summary | plainify | htmlUnescape }}... <a href="{{.RelPermalink}}">[Read more]</a></p>
   <div class="post-separator"/>
 </article>
 {{ end }}
