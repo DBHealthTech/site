@@ -22,4 +22,4 @@ cp themes/pb/dist/* themes/pb/static/.
 
 hugo
 
-find ./public -type f -iname "*.html" -o -iname "*.js" -o -iname "*.css" -exec bash -c 'zop_file "$0"' {} \;
+find ./public \( -type f -iname "*.html" -o -iname "*.js" -o -iname "*.css" \) -exec bash -c 'zop_file "$0"' {} \;
