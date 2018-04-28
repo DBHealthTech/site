@@ -5,7 +5,7 @@ theme = "pb"
 staticDir = ["static"]
 
 [params]
-  theme_color = "#4285f4"
+  theme_color = "#2f5c9e"
   description = "description of the best page"
   slogan = "Helping small to medium-sized healthcare organizations bridge clinical and technology systems"
   sub_slogan = "Specializing in LTPAC including Home Health, Hospice, Skilled Nursing, Senior Living, PACE"
