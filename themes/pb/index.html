@@ -2,7 +2,7 @@
     <div class="full hero">
 			<div>
 				<h1>{{ .Site.Params.slogan }}</h1>
-				<p>Security, compliance, cost reductions. <br/>We're here to help. </p>
+				<p>{{ .Site.Params.sub_slogan | safeHTML  }}</p>
 			</div>
     </div>
     <main>

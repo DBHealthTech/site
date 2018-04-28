@@ -11,4 +11,5 @@ staticDir = ["static"]
   lead_paragraph = "We are healthcare IT consultants who know the industry and can help integrate essential security and cost saving solutions into your company"
   phone_formatted = "616-359-6555"
   phone = "6163596555"
+  sub_slogan = "Security, compliance, cost reductions. <br/>We're here to help."
 
