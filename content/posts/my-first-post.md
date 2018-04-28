@@ -4,7 +4,7 @@ date: 2018-02-19T12:07:42-05:00
 author: Nicky B.
 ---
 
-This town is situated by the river Medway, and is joined to Rochester, to
+This **town** is situated by the river Medway, and is joined to Rochester, to
 which it is a suburb. It was built by King Charles the Second after the Dutch
 war; but the dock was begun by Queen Elizabeth, and has been so much improved,
 that it is now the first arsenal in the world. The houses of the various

@@ -66,7 +66,6 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: var(--header-size);
 }
 
 header > a {
@@ -81,6 +80,7 @@ header > a > img {
 @media only screen and (min-width: 600px) {
   header {
     flex-direction: row;
+    height: var(--header-size);
   }
 }
 
@@ -153,11 +153,11 @@ div.footer-info > div {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
   footer > div {
     justify-content: baseline;
   }
-}
+} */
 
 @media only screen and (min-width: 720px) {
   div.footer-info {

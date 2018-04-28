@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "DBHealthTech Healthcare IT Consulting"
 theme = "pb"
 staticDir = ["static"]
 
@@ -8,8 +8,8 @@ staticDir = ["static"]
   theme_color = "#4285f4"
   description = "description of the best page"
   slogan = "Helping small to medium-sized healthcare organizations bridge clinical and technology systems"
+  sub_slogan = "Bring clinical knowledge to the confusing and complex world of technology in healthcare<br/>Help healthcare organizations focus on the business of delivering care and not on technology"
   lead_paragraph = "We are healthcare IT consultants who know the industry and can help integrate essential security and cost saving solutions into your company"
   phone_formatted = "616-359-6555"
   phone = "6163596555"
-  sub_slogan = "Security, compliance, cost reductions. <br/>We're here to help."
-
+  address = "377 Benjamin Ave SE<br/>Grand Rapids, MI 49506"
