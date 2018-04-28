@@ -2,9 +2,9 @@
 @import "purecss/build/menus.css";
 
 :root {
+  --main-blue: #2f5c9e;
+  --light-blue: #5479AF;
   --bar-color: #003459;
-  --accent: #007ea7;
-  --light: #00a8e8;
   --font-color: #4a4a4a;
   --icon-font-size: 72px;
   --header-size: 100px;
@@ -110,7 +110,7 @@ div.opp-serviceGrid {
 
 div.hero {
   min-height: 300px;
-  background: linear-gradient(to right, var(--accent), var(--light));
+  background: linear-gradient(to right, var(--main-blue), var(--light-blue));
 }
 
 div.hero > div {
