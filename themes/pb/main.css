@@ -161,7 +161,7 @@ div.footer-info > div {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 720px) {
+/* @media only screen and (min-width: 720px) { */
   div.footer-info {
     display: flex;
   }
@@ -170,7 +170,7 @@ div.footer-info > div {
     margin-left: 1em;
     margin-right: 1em;
   }
-}
+/* } */
 
 .center {
   margin-top: 2em;
