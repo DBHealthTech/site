@@ -159,12 +159,6 @@ div.footer-info > div {
     margin: 0 auto;
 }
 
-/* @media only screen and (min-width: 1024px) {
-  footer > div {
-    justify-content: baseline;
-  }
-} */
-
 @media only screen and (min-width: 720px) {
   div.footer-info {
     display: flex;
