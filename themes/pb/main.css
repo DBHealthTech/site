@@ -141,7 +141,8 @@ footer {
 }
 
 footer a {
-  color: #cccccc
+  color: #cccccc;
+  text-decoration: underline;
 }
 
 footer p {
