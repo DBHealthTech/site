@@ -13,3 +13,4 @@ staticDir = ["static"]
   phone_formatted = "616-359-6555"
   phone = "6163596555"
   address = "377 Benjamin Ave SE<br/>Grand Rapids, MI 49506"
+  contact_email = "contact@dbhealthtech.com"
