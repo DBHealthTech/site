@@ -140,6 +140,10 @@ footer {
   justify-content: center;
 }
 
+footer a {
+  color: #cccccc
+}
+
 footer p {
   font-size: 14px;
   line-height: normal;
