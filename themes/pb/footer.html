@@ -4,7 +4,7 @@
           <div>
             <h3>Contact</h3>
             <p>{{ .Site.Params.phone_formatted }}</p>
-            <p>{{ .Site.Params.contact_email | safeHTML }}</p>
+            <p><a href="mailto:{{ .Site.Params.contact_email | safeHTML }}">{{ .Site.Params.contact_email | safeHTML }}</a></p>
             <p>Reach out to one of our team members on Linkedin</p>
           </div>
           <div>
