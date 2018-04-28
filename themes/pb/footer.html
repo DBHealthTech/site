@@ -3,7 +3,7 @@
         <div class="footer-info">
           <div>
             <h3>Contact</h3>
-            <p>{{ .Site.Params.phone_formatted }}</p>
+            <p><a href="tel:{{.Site.Params.phone}}">{{.Site.Params.phone_formatted}}</a></p>
             <p><a href="mailto:{{ .Site.Params.contact_email | safeHTML }}">{{ .Site.Params.contact_email | safeHTML }}</a></p>
           </div>
           <div>
