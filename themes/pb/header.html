@@ -16,12 +16,12 @@
   </head>
   <body>
     <header>
-      <h1><a href="/">Logo Here</a></h1>
+      <a href="/"><img src="static/img/dbhealthtech-logo.png"/></a>
       <div class="contact">
 			<div class="pure-menu pure-menu-horizontal">
 					<ul class="pure-menu-list">
 							<li class="pure-menu-item"><a href="/posts" class="pure-menu-link">Blog</a></li>
-							<li class="pure-menu-item"><a href="tel:+6161111111" class="pure-menu-link">📞 616-111-1111</a></li>
+							<li class="pure-menu-item"><a href="tel:+{{.Site.Params.phone}}" class="pure-menu-link">📞 {{.Site.Params.phone_formatted}}</a></li>
 					</ul>
 			</div>
       </div>

@@ -7,6 +7,7 @@
   --light: #00a8e8;
   --font-color: #4a4a4a;
   --icon-font-size: 72px;
+  --header-size: 100px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -46,12 +47,12 @@ body > * {
 
   body > .full {
     display: inherit;
-    display-template-columns: inherit;
     grid-column: full;
   }
 
   body > .full > * {
     grid-column: main;
+    max-width: 1024px;
   }
 }
 
@@ -65,6 +66,16 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: var(--header-size);
+}
+
+header > a {
+  height: calc(var(--header-size) - 20px);
+}
+
+header > a > img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 600px) {

@@ -7,5 +7,8 @@ staticDir = ["static"]
 [params]
   theme_color = "#4285f4"
   description = "description of the best page"
-  slogan = "Handle your IT Infrastructure with as much care as your patients"
+  slogan = "Helping small to medium-sized healthcare organizations bridge clinical and technology systems"
   lead_paragraph = "We are healthcare IT consultants who know the industry and can help integrate essential security and cost saving solutions into your company"
+  phone_formatted = "616-359-6555"
+  phone = "6163596555"
+
