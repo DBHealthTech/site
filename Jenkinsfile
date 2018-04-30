@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    # Until JENKINS-41051 is fixed we have to use the docker registry login workaround
+    // Until JENKINS-41051 is fixed we have to use the docker registry login workaround
     withCredentials([usernamePassword(
         credentialsId: 'docker-creds',
         usernameVariable: 'USERNAME',
