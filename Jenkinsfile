@@ -1,6 +1,6 @@
-triggers {
+pipelineTriggers([
     cron('* * * * *')
-}
+])
 
 node {
     checkout scm
