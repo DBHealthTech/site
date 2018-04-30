@@ -1,4 +1,7 @@
 weight: 3
 title: "Office365 and Cloud computing"
-description: "Management of Email, Office, SharePoint, Skype, Azure, Security, Licensing<br>Design, implementation, education, optimization"
+description: |
+    - Management of Email, Office, SharePoint, Skype, Azure, Security, Licensing
+    - Design, implementation, education, optimization
+
 icon: "💻" 
