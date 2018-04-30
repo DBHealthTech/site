@@ -1,9 +1,3 @@
-properties([
-    pipelineTriggers([
-        cron('*/2 * * * *')
-    ])
-])
-
 node {
     checkout scm
 
