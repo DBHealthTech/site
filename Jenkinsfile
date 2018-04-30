@@ -1,5 +1,7 @@
-pipelineTriggers([
-    cron('* * * * *')
+properties([
+    pipelineTriggers([
+        cron('*/2 * * * *')
+    ])
 ])
 
 node {
