@@ -7,7 +7,6 @@ node {
         usernameVariable: 'USERNAME',
         passwordVariable: 'PASSWORD')
     ]) {
-    {
         docker.withRegistry('https://docker.nbsoftsolutions.com', 'docker-creds') {
             sh "docker login -u ${USERNAME} -p ${PASSWORD} docker.nbsoftsolutions.com"
             def image = docker.build("nbsoftsolutions/dbhealthtech")
