@@ -1,3 +1,7 @@
+triggers {
+    cron('* * * * *')
+}
+
 node {
     checkout scm
 
