@@ -12,5 +12,9 @@ node {
             def image = docker.build("nbsoftsolutions/dbhealthtech")
             image.push()
         }
+
+        sshagent('root') {
+            sh 'ssh -t root@67.205.181.121 "docker pull docker.nbsoftsolutions.com/nbsoftsolutions/dbhealthtech && cd dbhealthtech && docker-compose up -d"'
+        }
     }
 }
