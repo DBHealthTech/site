@@ -7,9 +7,9 @@ staticDir = ["static"]
 [params]
   theme_color = "#2f5c9e"
   description = "description of the best page"
-  slogan = "We help small to medium-sized healthcare organizations leverage technology to better meet their clinical business needs. Our staff brings clinical and technological expertise, allowing organizations to focus on delivering care and not on technology"
-  sub_slogan = "Specializing in LTPAC including Home Health, Hospice, Skilled Nursing, Senior Living, PACE"
-  lead_paragraph = "Help organizations develop and implement an overall IT strategy to drive cost reductions and business efficiencies. Implement and optimize key clinical systems (e.g. electronic health record (EHR), scheduling, payroll/HR). Identify and implement process improvements leveraging technology.Implement proven IT and healthcare industry standard hardware and software"
+  slogan = "We help small to medium-sized healthcare organizations leverage technology to better meet their clinical business needs"
+  sub_slogan = "Our staff brings clinical and technological expertise, allowing organizations to focus on delivering care and not on technology"
+  lead_paragraph = "Specializing in LTPAC including Home Health, Hospice, Skilled Nursing, Senior Living, PACE"
   phone_formatted = "616-359-6555"
   phone = "6163596555"
   address = "DB HealthTech Consulting<br/>377 Benjamin Ave SE<br/>Grand Rapids, MI 49506"
