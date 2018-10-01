@@ -7,8 +7,8 @@ staticDir = ["static"]
 [params]
   theme_color = "#2f5c9e"
   description = "description of the best page"
-  slogan = "We help healthcare organizations leverage technology to better meet their clinical business needs"
-  sub_slogan = "Our staff brings clinical and technical expertise, allowing organizations to focus on the mission and not on technology"
+  slogan = "Helping healthcare organizations leverage technology to better meet clinical business needs"
+  sub_slogan = "Our staff bring clinical and technical expertise, allowing organizations to focus on the mission and not on technology"
   lead_paragraph = "Specializing in LTPAC including Home Health, Hospice, Skilled Nursing, Senior Living, PACE"
   phone_formatted = "616-359-6555"
   phone = "6163596555"
