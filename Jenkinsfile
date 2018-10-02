@@ -14,7 +14,7 @@ node {
         }
 
         sshagent(credentials: ['ssh-key']) {
-            sh 'ssh -o StrictHostKeyChecking=no -l root 67.205.181.121 "docker pull docker.nbsoftsolutions.com/nbsoftsolutions/dbhealthtech && cd dbhealthtech && docker-compose up -d"'
+            sh 'ssh -o StrictHostKeyChecking=no -l root 104.248.53.160 "docker pull docker.nbsoftsolutions.com/nbsoftsolutions/dbhealthtech && cd dbhealthtech && docker-compose up -d"'
         }
     }
 }
