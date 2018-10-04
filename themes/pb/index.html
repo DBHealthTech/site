@@ -10,6 +10,8 @@
       <div class="center pure-menu pure-menu-horizontal hide-small">
           <ul class="pure-menu-list">
               <li class="pure-menu-item"><a href="#services" class="pure-menu-link">Services</a></li>
+              <li class="pure-menu-item"><a href="#partnerships" class="pure-menu-link">Partnerships</a></li>
+              <li class="pure-menu-item"><a href="#applications" class="pure-menu-link">Applications</a></li>
               <li class="pure-menu-item"><a href="#leadership" class="pure-menu-link">Leadership</a></li>
           </ul>
       </div>
@@ -41,6 +43,32 @@
           </div>
         {{ end }}
       </div>-->
+
+      <h2 id="partnerships" class="center">Partnerships</h2>
+      <div class="opp-serviceGrid">
+        {{ range sort .Site.Data.partnerships "weight" }}
+          <div class="content">
+            <h3>{{ .title }}</h3>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          <div class="graphic">
+            <span class="icon">{{ .icon }}</span>
+          </div>
+        {{ end }}
+      </div>
+
+      <h2 id="applications" class="center">Applications</h2>
+      <div class="serviceGrid">
+        {{ range sort .Site.Data.applications "weight" }}
+        <div class="graphic">
+          <span class="icon">{{ .icon }}</span>
+        </div>
+        <div class="content">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description | markdownify }}</p>
+        </div>
+        {{ end }}
+      </div>
 
       <h2 id="leadership" class="center">Leadership Team</h2>
       <div class="serviceGrid">

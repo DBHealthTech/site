@@ -5,7 +5,9 @@
     <span>
       {{- if or .Params.author .Site.Params.author -}}
       Published by: {{ .Params.author | default .Site.Params.author }} on {{ end }}
+      {{- if .Params.date -}}
       {{- .Date.Format "January 2, 2006" -}}
+      {{ end }}
     </span>
   </div>
   <div class="content">{{ .Content }}</div>
