@@ -7,7 +7,7 @@ title: "Interested in a free Assessment"
 
  
 
-DB HealthTech Consulting will provide a free 2-hour assessment to the first 5 home care or hospice providers attending the Fall 2018 NAHC conference. To contact us, please send email to contact_email and provide the following information:
+DB HealthTech Consulting will provide a free 2-hour assessment to the first 5 home care or hospice providers attending the Fall 2018 NAHC conference. To contact us, please send email to contact@dbhealthech.com and provide the following information:
 Organization Name,
 Address,
 Your Contact Information,
