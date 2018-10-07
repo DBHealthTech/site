@@ -11,6 +11,6 @@ DB HealthTech Consulting will provide a free 2-hour assessment to the first 5 ho
 organization name,
 address,
 your contact information,
-description of your organization’s challenge(s).
+and description of your organization’s challenge(s).
 
-We will schedule a call with you and key staff to review your current pain points and objectives. After our meeting, we will provide a document with a high level summary of our findings.
+We will schedule a call with you and your key staff to review current pain points and objectives. After our meeting, we will provide a document with a high level summary of our findings and how we may be able to assist going forward.
