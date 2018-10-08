@@ -19,7 +19,9 @@
       <div class="serviceGrid">
         {{ range sort .Site.Data.services "weight" }}
         <div class="graphic">
-          <span class="icon">{{ .icon }}</span>
+          {{- if .icon }}
+          <span class="icon">{{ .icon | safeHTML }}</span>
+          {{ end }}
         </div>
         <div class="content">
           <h3>{{ .title }}</h3>
@@ -52,7 +54,9 @@
             <p>{{ .description | markdownify }}</p>
           </div>
           <div class="graphic">
-            <span class="icon">{{ .icon }}</span>
+          {{- if .icon }}
+          <span class="icon">{{ .icon | safeHTML }}</span>
+          {{ end }}
           </div>
         {{ end }}
       </div>
@@ -61,7 +65,9 @@
       <div class="serviceGrid">
         {{ range sort .Site.Data.applications "weight" }}
         <div class="graphic">
-          <span class="icon">{{ .icon }}</span>
+          {{- if .icon }}
+          <span class="icon">{{ .icon | safeHTML }}</span>
+          {{ end }}
         </div>
         <div class="content">
           <h3>{{ .title }}</h3>
