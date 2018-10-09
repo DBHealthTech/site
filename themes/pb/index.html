@@ -47,16 +47,16 @@
       </div>-->
 
       <h2 id="partnerships" class="center">Partnerships</h2>
-      <div class="opp-serviceGrid">
+      <div class="serviceGrid">
         {{ range sort .Site.Data.partnerships "weight" }}
-          <div class="content">
-            <h3>{{ .title }}</h3>
-            <p>{{ .description | markdownify }}</p>
-          </div>
           <div class="graphic">
           {{- if .icon }}
           <span class="icon">{{ .icon | safeHTML }}</span>
           {{ end }}
+          </div>
+          <div class="content">
+            <h3>{{ .title }}</h3>
+            <p>{{ .description | markdownify }}</p>
           </div>
         {{ end }}
       </div>
