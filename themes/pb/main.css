@@ -227,6 +227,10 @@ div.content i {
   text-align: right;
 }
 
+div.content > h3 {
+  text-align: center;
+}
+
 span.pull {
   color: #903;
   float: left;
@@ -252,6 +256,10 @@ div.footer-info h3 {
 }
 
 @media only screen and (min-width: 1024px) {
+div.content > h3 {
+  text-align: initial;
+}
+  
 h2.center {
   display: flex;
   flex-direction: row;
