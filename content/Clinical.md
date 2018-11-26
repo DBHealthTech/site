@@ -1,5 +1,5 @@
 ---
-title: "Clinical and IT operations"
+title: "Clinical Operations"
 ---
 
 <p>It can be challenging to meet your financial, quality and regulatory goals in this ever changing healthcare environment.</p>
