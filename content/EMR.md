@@ -1,5 +1,5 @@
 ---
-title: "Electronic Health Record Servivces"
+title: "Electronic Health Record Services"
 ---
 
 <p>Implementing and maintaining an Electronic Health Record (EHR) is one of the most significant investments an organization will make.</p>
