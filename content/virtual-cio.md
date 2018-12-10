@@ -10,4 +10,5 @@ title: "Virtual CIO / CCIO"
 </ul>
 <p>Technology is increasingly important in the healthcare environment to drive efficiencies, meet regulatory requirements and to help organizations provide staff and client satisfaction.&nbsp;&nbsp; Technology can also help organizations stay competitive in their market with referral sources and with clients. Hospital systems and payers want partners who can help them to achieve their outcomes. Clients are demanding the latest technology to help them manage their health and stay connected.</p>
 <p>It is vital that your organization stays aware of technology advancements and functionality enhancements. Our skilled team can help you to develop and implement a strategy that supports your business objectives and can advocate for you with your vendors as needed.</p>
+
 Contact us at <contact@dbhealthtech.com> to discuss how utilizing our Virtual CIO or CCIO services can help you to maximize the value of your clinical and IT systems.</p>
