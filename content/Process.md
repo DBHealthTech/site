@@ -11,4 +11,4 @@ title: "Process Improvement"
 <p>Organizations must contend with shrinking reimbursements, rising costs, and other external pressures while trying to remain relevant and competitive. Staff are busy providing care to clients. Yet your business processes, from the back office to the clinical areas, can be an area of opportunity for potential efficiencies and reduced cost.</p>
 <p>Evaluating your processes periodically is key in a healthy organization.&nbsp;&nbsp; Our knowledgeable staff can identify areas of opportunity for process improvement, and recommend technological solutions that can help.</p>
 
-Contact us at [contact@dbhealthtech.com] to discuss how utilizing our Process Improvement services can benefit you and your staff.
+Contact us at <contact@dbhealthtech.com> to discuss how utilizing our Process Improvement services can benefit you and your staff.
