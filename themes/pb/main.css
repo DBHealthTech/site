@@ -231,6 +231,12 @@ div.content > h3 {
   text-align: center;
 }
 
+
+div.content {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
 span.pull {
   color: #903;
   float: left;
