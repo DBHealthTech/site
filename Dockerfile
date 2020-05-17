@@ -13,7 +13,7 @@ RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /tmp \
 
 COPY . /site
 WORKDIR /site
-RUN yarn && ./build.sh
+RUN npm ci && ./build.sh
 
 FROM nginx:stable-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
