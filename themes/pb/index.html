@@ -79,6 +79,7 @@
       <h2 id="leadership" class="center">Leadership Team</h2>
       <div class="serviceGrid">
         {{ range sort .Site.Data.team "weight" }}
+          {{ if not (isset . "hidden") }}
           <div class="graphic">
             <div class="image-cropper">
               <img src="http://{{ .image }}"/>
@@ -88,6 +89,7 @@
             <h3>{{ .person }}</h3>
             <p>{{ .description | markdownify }}</p>
           </div>
+          {{ end }}
         {{ end }}
       </div>
     </main>
