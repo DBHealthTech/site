@@ -1,8 +1,5 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://dbhealthtech.com/"
 title = "DBHealthTech Healthcare IT Consulting"
-theme = "pb"
-staticDir = ["static"]
 
 [params]
   theme_color = "#2f5c9e"

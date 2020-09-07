@@ -40,7 +40,7 @@
           </div>
           <div class="graphic">
             <div class="image-cropper">
-              <img src="http://{{ .image }}"/> 
+              <img src="{{ .image }}"/> 
             </div>
           </div>
         {{ end }}
@@ -82,7 +82,7 @@
           {{ if not (isset . "hidden") }}
           <div class="graphic">
             <div class="image-cropper">
-              <img src="http://{{ .image }}"/>
+              <img src="{{ .image }}"/>
             </div>
           </div>
           <div class="content">

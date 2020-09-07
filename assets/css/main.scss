@@ -1,5 +1,5 @@
 @import "normalize.css";
-@import "purecss/build/menus.css";
+@import "purecss/build/menus";
 
 :root {
   --main-blue: #2f5c9e;
@@ -8,6 +8,10 @@
   --font-color: #4a4a4a;
   --icon-font-size: 72px;
   --header-size: 100px;
+}
+
+body {
+  margin: 0;
 }
 
 @media only screen and (min-width: 600px) {

@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
-    <link rel="stylesheet" href="main.css">
+    {{ $opts := (dict "outputStyle" "compressed" "includePaths" (slice "node_modules")) }}
+    {{ $main := resources.Get "css/main.scss" | toCSS $opts | fingerprint }}
+    <link rel="stylesheet" href="{{ $main.RelPermalink }}">
 
     <!-- Theme Color for Chrome, Firefox OS and Opera -->
     <!--<meta name="theme-color" content="#4285f4">-->
@@ -16,7 +18,7 @@
   </head>
   <body>
     <header>
-      <a href="/"><img src="static/img/dbhealthtech-logo.png"/></a>
+      <a href="/"><img src="/img/dbhealthtech-logo.png"/></a>
       <div class="contact">
       <div class="pure-menu pure-menu-horizontal">
           <ul class="pure-menu-list">

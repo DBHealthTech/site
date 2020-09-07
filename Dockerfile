@@ -1,6 +1,6 @@
-FROM node:8
+FROM node:lts
 
-ENV HUGO_VERSION=0.38.1
+ENV HUGO_VERSION=extended_0.74.3
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz /tmp
 RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /tmp \
     && mkdir -p /usr/local/sbin \
