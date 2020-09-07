@@ -62,5 +62,4 @@ typings/
 
 .cache
 public/
-themes/pb/layouts/partials/footer.html
-themes/pb/layouts/partials/header.html
+/resources/_gen/
