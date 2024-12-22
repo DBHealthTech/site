@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eou pipefail
+
 function zop_file {
     zopfli "${1}"
     touch -r "${1}" "${1}.gz"
